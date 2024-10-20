@@ -1,0 +1,167 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "inter",sans-serif;
+    color: var(--text-color);
+}
+:root{
+    --text-color:#fff;
+    --main-color: #514e61;
+    --h1-font:5.5rem;
+    --p-font:1rem;
+}
+header a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+header ul{
+    list-style: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 9%;
+    transition: all .55s ease-in;
+}
+header .logo{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+}
+header .navmenu{
+    display: flex;
+}
+.navmenu a{
+    display:inline-block;
+    text-align: center;
+    margin: 0 30px;
+    font-size: var(--p-font);
+    transition: all .5s ease-in;
+}
+.navmenu a:hover{
+    transform: translateY(-5px);
+    color: ghostwhite;
+    border-bottom: 1px solid var(--text-color);
+}
+header .btn-reg{
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 16px;
+    padding: 10px 20px;
+    color:var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin-right: 19px;
+    transition: .5s;
+}
+header .btn-reg:hover{
+    background:red;
+}
+.bainer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(250.59deg, #322c38 0%, #514e61 28.53%, #1c2137 75.52%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    padding: 0 10%;
+}
+section .bainer-img img{
+    width: 100%;
+    height: auto;
+}
+.bainer-text{
+    padding-top: 10%;
+}
+.bainer-text span{
+    color: var(--main-color);
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.bainer-text h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 15px 0;
+}
+.bainer-text h1{
+    font-family: "Permanent Marker",cursive;
+    font-size: var(--h1-font);
+    line-height: 1;
+    margin: 0 0 35px;
+}
+.bainer-text p{
+    width: 100%;
+    max-width: 500px;
+    font-size: var(--p-font);
+}
+.bainer-btn a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 10px 10px;
+    margin-right: 15px;
+    border-radius: 20px;
+}
+.bainer-btn a:hover{
+    transform: translateY(-5px);
+    transition: all .5s ease-in;
+    border: 1px solid var(--text-color);
+    background: var(--main-color);
+    color: var(--text-color);
+}
+@media (max-width:1400px)
+{    
+    .bainer-img img{
+        width: 100%;
+        height: auto;
+        padding-top: 110px;
+    }
+    .bainer-text h1{
+        font-size: 40px;
+        padding: 0 0;
+    }
+    
+}
+@media (max-width:700px)
+{    
+    header{
+        padding: 5px 0;
+
+    }
+    .navmenu a{
+        margin: 0 2px;
+    }
+    .bainer-img img{
+        width: 100%;
+        height: auto;
+        padding-top: 110px;
+    }
+    .bainer-btn a{
+        margin-bottom: 10px;
+    }
+    .bainer-text h1{
+        font-size: 20px;
+        padding: 0 0;
+    }
+    .bainer-text p{
+        font-size: 10px;
+        padding: 0 ;
+
+    }
+    
+}
